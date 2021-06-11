@@ -20,9 +20,7 @@ alert(lastName);
 const fullName = firstName + "  " + lastName;
 alert(fullName);
 // Declare three variables `name,` `newUser` and `isAdmin`.
-let name;
-let newName;
-let isAdmin;
+let name, newName, isAdmin;
 // Assign your name as the value of `name`.
 name = "suraj";
 // Assign the value of `name` to `newUser`.
@@ -30,7 +28,9 @@ newName = name;
 // Set the value of `isAdmin` to `true`.
 isAdmin = true;
 // Alert the values of all the three variables.
-alert(name, newName, isAdmin);
+alert(name);
+alert(newName);
+alert(isAdmin);
 // Assignment and re-assignment
 
 var wiseMan = "Tyrion Lannister";
