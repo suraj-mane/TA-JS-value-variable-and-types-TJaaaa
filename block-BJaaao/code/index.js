@@ -38,8 +38,15 @@ alert(`The sum of ${num1} and ${num2} is ${num1 + num1}`);
 */
 userName = prompt ("User Name");
 userProfession = prompt ("User profession");
-isAdult = prompt ();
+isAdult = confirm("Are you an Adult");
 alert(`I am ${userName} a ${userProfession}`);
+console.log(`I am ${userName} a ${userProfession}`);
+alert(`userName: ${userName}
+Adult: ${isAdult}
+Profession: ${userProfession}`);
+console.log(`Username: ${userName}
+Adult: ${isAdult}
+Profession: ${userProfession}`);
 
 /*
 . Addition using prompt
@@ -51,9 +58,11 @@ alert(`I am ${userName} a ${userProfession}`);
   - Log using console.log [numA - numB]
   - Log using console.log [numA * numB]
 */
-let numA = prompt ("Enter a first number");
-let numB = prompt ("Enter a secound number");
+let numA = Number (prompt("Enter a first number"));
+let numB = Number (prompt("Enter a secound number"));
+
 alert(numA - numB);
 alert(numA * numB);
+  
 console.log(numA - numB);
 console.log(numA * numB);
