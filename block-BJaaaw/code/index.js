@@ -44,7 +44,7 @@ if (houseName == "stark") {
 
 // 5. Convert the above code using`?` terniary operator
 
-
+houseName === "stark" ? alert("Winter is coming") : houseName === "lannister" ? alert("A lannister always pays his debt") : alert("all men must die"); 
 // Switch
 switch(houseName) {
   case "stark":
@@ -131,6 +131,7 @@ Implement the condition give below using`if..else` and`switch` statement.
 */
 
 let marks = Number(prompt("Enter your marks!"));
+
 if(marks > 100) {
   alert("Marks can't be greater than 100");
 } else if(marks > 80 && marks < 100) {
@@ -143,7 +144,7 @@ if(marks > 100) {
   alert("Grade D");
 } 
 
-switch(marks) {
+switch(true) {
   case  marks > 100:
     alert("Marks can't be greater than 100");
     break;
