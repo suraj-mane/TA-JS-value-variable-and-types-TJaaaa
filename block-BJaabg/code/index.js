@@ -17,8 +17,18 @@ var amount = 0;
 
 // ⛑ Answer of the above will `$334.76`.
 let sub = "";
-while(bank_balance < PHONE_PRICE){
-    sub = bank_balance - PHONE_PRICE;
-    bank_balance++;
+while(amount < bank_balance){
+    amount += PHONE_PRICE;
+    if( amount < SPENDING_THRESHOLD){
+        amount += ACCESSORY_PRICE; 
+    }
 }
-console.log(sub);
+let tax = amount * TAX_RATE;
+let taxamount = amount + tax;
+console.log(`$${taxamount}`);
+
+if(taxamount < bank_balance){
+    alert("you can buy a phone");
+} else {
+    alert("you can't buy phone");
+}
