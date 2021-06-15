@@ -16,3 +16,9 @@ var amount = 0;
 // your code goes here
 
 // ⛑ Answer of the above will `$334.76`.
+let sub = "";
+while(bank_balance < PHONE_PRICE){
+    sub = bank_balance - PHONE_PRICE;
+    bank_balance++;
+}
+console.log(sub);
