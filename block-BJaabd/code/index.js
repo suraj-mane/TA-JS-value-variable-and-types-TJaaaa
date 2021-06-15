@@ -117,30 +117,33 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 
 let marks = Number(prompt("Enter the marks"));
 
-switch(marks){
+switch(true){
   case marks > 90:
     alert("AA");
     break;
-  case marks < 90 || marks > 80:
+  case marks > 80 && marks < 90:
     alert("AB");
     break;
-  case marks > 70 || marks < 80:
+  case marks > 70 && marks < 80:
     alert("BB");
     break;
-  case marks > 60 || marks < 70:
+  case marks > 60 && marks < 70:
     alert("BC");
     break;
-  case marks > 50 || marks < 60:
+  case marks > 50 && marks < 60:
     alert("CC");
     break;
-  case marks > 40 || marks < 50:
+  case marks > 40 && marks < 50:
     alert("CD");
     break;
-  case marks > 30 || marks < 40:
+  case marks > 30 && marks < 40:
     alert("DD");
     break;
-  default:
+  case marks < 30:
     alert("FF");
+    break;
+  default:
+    alert("Enter vaild number");
 }
 /*
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
@@ -163,8 +166,10 @@ let x = prompt("write first number");
 let y = prompt("write secound number");
 let z = prompt("write thired number");
 
-if(x > 0 && y > 0 && z > 0){
-  alert("number is positive +");
+let product = x * y * z;
+
+if(product > 0){
+  alert("number is positive ");
 } else {
   alert("Number is negative");
 }
@@ -181,3 +186,23 @@ if(x > 0 && y > 0 && z > 0){
 */
 
 // [Your code goes here]
+let firstNum = +prompt("enter the number");
+let secoundNum = +prompt("enter the number");
+let operations = prompt("operation");
+
+switch(operations) {
+  case "Add":
+    alert(`The sum of ${firstNum} and ${secoundNum} is ${firstNum + secoundNum}`);
+    break;
+  case "Sub":
+    alert(`The Sub of ${firstNum} and ${secoundNum} is ${firstNum - secoundNum}`);
+    break;
+  case "Mul":
+    alert(`The sum of ${firstNum} and ${secoundNum} is ${firstNum * secoundNum}`);
+    break;
+  case "Div":
+    alert(`The Div of ${firstNum} and ${secoundNum} is ${firstNum % secoundNum}`);
+    break;
+  default:
+    alert("vaild input");    
+}
